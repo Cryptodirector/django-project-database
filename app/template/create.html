@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="forms">
+        <h3>Добавить клиента:</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.name }}<br>
+            {{ form.last_name }}<br>
+            {{ form.money }}<br>
+            {{ form.month }}<br>
+            <input type="submit" class="btn btn-success" value="Добавить">
+        </form>
+    </div>
+{% endblock %}

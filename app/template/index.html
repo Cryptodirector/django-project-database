@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    {% if current_month_january == 'Январь' %}
+        <div class="month">
+            <hr>
+            <p>Январь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Январь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_january }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_february == 'Февраль' %}
+        <div class="month">
+            <hr>
+            <p>Февраль</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Февраль' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_february }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_march == 'Март' %}
+        <div class="month">
+            <hr>
+            <p>Март</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Март' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_march }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+
+    {% if current_month_april == 'Апрель' %}
+        <div class="month">
+            <hr>
+            <p>Апрель</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Апрель' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_april }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_may == 'Май' %}
+        <div class="month">
+            <hr>
+            <p>Май</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Май' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_may }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_june == 'Июнь' %}
+        <div class="month">
+            <hr>
+            <p>Июнь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Июнь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_june }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+
+
+
+
+
+    {% if current_month_july == 'Июль' %}
+        <div class="month">
+            <hr>
+            <p>Июль</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Июль' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_july }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+
+
+    {% if current_month_august == 'Август' %}
+        <div class="month">
+            <hr>
+            <p>Август</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Август' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_august }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_september == 'Сентябрь' %}
+        <div class="month">
+            <hr>
+            <p>Сентябрь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Сентябрь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_september }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+    {% if current_month_october == 'Октябрь' %}
+        <div class="month">
+            <hr>
+            <p>Октябрь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Октябрь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_october }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+
+    {% if current_month_november == 'Ноябрь' %}
+        <div class="month">
+            <hr>
+            <p>Ноябрь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Ноябрь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_november }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+
+
+
+    {% if current_month_december == 'Декабрь' %}
+        <div class="month">
+            <hr>
+            <p>Декабрь</p>
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Стоимость услуги</th>
+                        <th>Месяц</th>
+                        <th>Изменить</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                {% for tables in table %}
+                    {% if tables.month == 'Декабрь' %}
+                        <tr>
+                            <td>{{ tables.name }}</td>
+                            <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.month }}</td>
+                            <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
+                            <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <p>Итого: {{ money_december }} &#8381</p>
+            <hr>
+        </div>
+    {% endif %}
+
+{% endblock %}
