@@ -7,7 +7,7 @@ from django.forms import TextInput, NumberInput
 class UserForm(forms.ModelForm):
     class Meta:
         model = Table
-        fields = ['name', 'last_name', 'money', 'month']
+        fields = ['name', 'last_name', 'money', 'service', 'month']
         widgets = {
             'name': TextInput(attrs={
                 'class': 'form-control',
@@ -21,6 +21,12 @@ class UserForm(forms.ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Введите стоимость услуги'
             }),
+
+            'service': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Введите услугу'
+            }),
+
             'month': TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Введите месяц'

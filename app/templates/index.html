@@ -12,9 +12,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -24,9 +25,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Январь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -47,9 +49,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -58,9 +61,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Февраль' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -81,9 +85,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -92,9 +97,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Март' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -116,9 +122,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -127,9 +134,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Апрель' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -150,9 +158,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -161,9 +170,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Май' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -184,9 +194,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -195,9 +206,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Июнь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -223,9 +235,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -234,10 +247,12 @@
                 {% for tables in table %}
                     {% if tables.month == 'Июль' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
+                            <td>{{ tables.service }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
                         </tr>
@@ -259,9 +274,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -270,9 +286,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Август' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -293,9 +310,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -304,9 +322,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Сентябрь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -327,9 +346,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -338,9 +358,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Октябрь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -362,9 +383,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -373,9 +395,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Ноябрь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>
@@ -398,9 +421,10 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>Имя</th>
                         <th>Фамилия</th>
+                        <th>Имя</th>
                         <th>Стоимость услуги</th>
+                        <th>Услуга</th>
                         <th>Месяц</th>
                         <th>Изменить</th>
                         <th>Удалить</th>
@@ -409,9 +433,10 @@
                 {% for tables in table %}
                     {% if tables.month == 'Декабрь' %}
                         <tr>
-                            <td>{{ tables.name }}</td>
                             <td>{{ tables.last_name }}</td>
+                            <td>{{ tables.name }}</td>
                             <td>{{ tables.money }} &#8381</td>
+                            <td>{{ tables.service }}</td>
                             <td>{{ tables.month }}</td>
                             <td><a href="edit/{{ tables.id }}/">Изменить</a></td>
                             <td><a href="delete/{{ tables.id }}/">Удалить</a></td>

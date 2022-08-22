@@ -5,7 +5,7 @@ from django.http import HttpResponseRedirect, HttpResponseNotFound
 
 
 def index(request):
-    table = Table.objects.all()
+    table = Table.objects.order_by('last_name').all()
     current_month_january, current_month_february, current_month_march = '', '', ''
     current_month_april, current_month_may, current_month_june = '', '', ''
     current_month_july, current_month_august, current_month_september = '', '', ''
@@ -90,6 +90,7 @@ def edit(request, id):
         klient.last_name = request.POST.get('last_name')
         klient.money = request.POST.get('money')
         klient.month = request.POST.get('month')
+        klient.service = request.POST.get('service')
         klient.save()
         return HttpResponseRedirect('/')
     return render(request, 'edit.html', {'klient': klient})
