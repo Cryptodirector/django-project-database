@@ -5,11 +5,11 @@
         <h3>Изменить данные клиента:</h3>
         <form method="POST">
             {% csrf_token %}
-            <input type="text" name="name" value="{{ klient.name }}" class="form-control"><br>
-            <input type="text" name="last_name" value="{{ klient.last_name }}" class="form-control"><br>
-            <input type="number" name="money" value="{{ klient.money }}" class="form-control"><br>
-            <input type="text" name="service" value="{{ klient.service }}" class="form-control"><br>
-            <input type="text" name="month" value="{{ klient.month }}" class="form-control"><br>
+            <input type="text" name="name" value="{{ client.name }}" class="form-control"><br>
+            <input type="text" name="last_name" value="{{ client.last_name }}" class="form-control"><br>
+            <input type="number" name="money" value="{{ client.money }}" class="form-control"><br>
+            <input type="text" name="service" value="{{ client.service }}" class="form-control"><br>
+            <input type="text" name="month" value="{{ client.month }}" class="form-control"><br>
             <input type="submit" class="btn btn-success" value="Изменить"><br>
         </form>
     </div>

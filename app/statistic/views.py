@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
-from .models import Table
+from .models import Clients
 from .forms import UserForm
 from django.http import HttpResponseRedirect, HttpResponseNotFound
 
 
 def index(request):
-    table = Table.objects.order_by('last_name').all()
+    table = Clients.objects.order_by('last_name').all()
     current_month_january, current_month_february, current_month_march = '', '', ''
     current_month_april, current_month_may, current_month_june = '', '', ''
     current_month_july, current_month_august, current_month_september = '', '', ''
@@ -84,16 +84,16 @@ def create(request):
 
 
 def edit(request, id):
-    klient = Table.objects.get(id=id)
+    client = Clients.objects.get(id=id)
     if request.method == 'POST':
-        klient.name = request.POST.get('name')
-        klient.last_name = request.POST.get('last_name')
-        klient.money = request.POST.get('money')
-        klient.month = request.POST.get('month')
-        klient.service = request.POST.get('service')
-        klient.save()
+        client.name = request.POST.get('name')
+        client.last_name = request.POST.get('last_name')
+        client.money = request.POST.get('money')
+        client.month = request.POST.get('month')
+        client.service = request.POST.get('service')
+        client.save()
         return HttpResponseRedirect('/')
-    return render(request, 'edit.html', {'klient': klient})
+    return render(request, 'edit.html', {'client': client})
 
 
 
@@ -101,10 +101,10 @@ def edit(request, id):
 
 def delete(request, id):
     try:
-        klient = Table.objects.get(id=id)
+        klient = Clients.objects.get(id=id)
         klient.delete()
         return HttpResponseRedirect('/')
-    except Table.DoesNotExist:
+    except Clients.DoesNotExist:
         return HttpResponseNotFound('<h2>Kлиент не найден</h2>')
 
 

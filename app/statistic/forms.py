@@ -1,12 +1,11 @@
 from django import forms
-from .models import Table
+from .models import Clients
 from django.forms import TextInput, NumberInput
-
 
 
 class UserForm(forms.ModelForm):
     class Meta:
-        model = Table
+        model = Clients
         fields = ['name', 'last_name', 'money', 'service', 'month']
         widgets = {
             'name': TextInput(attrs={
@@ -32,9 +31,3 @@ class UserForm(forms.ModelForm):
                 'placeholder': 'Введите месяц'
             })
         }
-
-
-
-
-
-

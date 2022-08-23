@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models import Manager
 
 
-class Table(models.Model):
+class Clients(models.Model):
     name = models.CharField('Имя', max_length=20, blank=True)
     last_name = models.CharField('Фамилия', max_length=20, blank=True)
     money = models.IntegerField('Стоимость услуги', null=True)
