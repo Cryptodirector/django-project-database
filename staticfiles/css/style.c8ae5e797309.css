@@ -1,0 +1,41 @@
+body {
+    background: url("/static/image/4907157.caee88dd8997.jpg");
+}
+
+
+.month {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.month p {
+    color: red;
+
+}
+
+.table {
+    width: 40%
+    margin: 0 auto;
+}
+
+.table a {
+    color: gray;
+    text-decoration: none;
+}
+
+.forms {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 30%;
+}
+
+.forms h3 {
+    margin-bottom: 30px;
+}
+
+.month hr {
+    size: 2px;
+}
